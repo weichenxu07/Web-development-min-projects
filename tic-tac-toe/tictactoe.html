@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" type="text/css" href="./tictactoe.css">
+	<script type="text/javascript" src="./tictactoe.js"></script>
+</head>
+<body>
+	<div id="titleandmode"> 
+		<h1>Tic-Tac-Toe</h1>
+		<section id="controlpanel">
+			<button id="restart">Restart</button>
+			<div>
+				<span>Current Turn: &nbsp;</span>
+				<img src="./circle.png" id="currentturn" alt="currentturn">
+			</div>
+		</section>
+	</div>
+	<div id="checkerboard">
+		<div class="tile left top"></div>
+		<div class="tile top"></div>
+		<div class="tile right top"></div>
+		<div class="tile left"></div>
+		<div class="tile"></div>
+		<div class="tile right"></div>
+		<div class="tile left bottom"></div>
+		<div class="tile bottom"></div>
+		<div class="tile right bottom"></div>
+		<div id="result" class="hidden">Result</div>
+	</div>
+</body>
+</html>

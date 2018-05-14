@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+body {
+	font-family: 'Indie Flower', cursive;
+	font-size: 14pt;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+button {
+	font-family: 'Indie Flower', cursive;
+	font-size: 1em;
+	border-radius: 10px;
+	border: 5px outset #999;
+	background-color: #f7f7f7;
+}
+
+button:hover {
+	background-color: #ccc;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+#titleandmode {
+	text-align: center;
+}
+
+#controlpanel {
+	width: 40%;
+	border: 3px solid black;
+	border-radius: 40px;
+	margin: auto;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#controlpanel div {
+	display: flex;
+	align-items: center;
+}
+
+#currentturn {
+	height: 50px;
+	width: 50px;
+}
+
+#checkerboard {
+	position: relative;
+	margin: 20px auto;
+	height: 480px;
+	width: 480px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.tile {
+	box-sizing: content-box;  
+	height: 150px;
+	width: 150px;
+	border: 5px solid black;
+	background-size: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+}
+
+#result {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3em;
+	background-color: rgba(255,255,255,0.5);
+	padding: 50px;
+	border-radius: 20px;
+}
+
+.hidden {
+	display: none;
+}
+
+/*.tile:hover {
+	border-color: rgba(0,0,0,0.1);
+}*/
+
+.left {
+	border-left-color: rgb(255,255,255);
+}
+
+.right {
+	border-right-color: rgb(255,255,255);
+}
+
+.top {
+	border-top-color: rgb(255,255,255);
+}
+
+.bottom {
+	border-bottom-color: rgb(255,255,255);
+}
